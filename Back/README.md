@@ -1,4 +1,4 @@
-## Back-office
+# Back-office
  
 Monolithic API : MVC architecture.
 Data mappers manage persistence of data while controllers and routes organize business logic and HTTP request management. 
@@ -9,7 +9,7 @@ The application is structured to increase maintainability and scale, all this al
 - Authentication and user management.
 - Consultation of information related to the available routes.
 
-### What is needed ?
+## What is needed ?
 
 - [Node.js](https://nodejs.org/)
 - [npm](https://www.npmjs.com/)
@@ -18,8 +18,8 @@ The application is structured to increase maintainability and scale, all this al
 - [Sqitch](https://sqitch.org/)
 - [Docker](https://www.docker.com/)
 
-### Install
-Into the "Back" repo
+## Install
+Into the "Back" foler
 
 1. Install Node.js dependencies (use NPM) :
 
@@ -33,15 +33,35 @@ Into the "Back" repo
    mv .env.example .env
    ```
 
-   ```plaintext
-   DB_USER=votre_utilisateur
-   DB_HOST=localhost
-   DB_NAME=nom_de_votre_base
-   DB_PASSWORD=votre_mot_de_passe
-   DB_PORT=5432
+
+## Start the server and DataBase with DOCKER COMPOSE : 
+
+1. Vérifiez qu'aucun processus de PostgreSQL ne fonctionne en arrière plan (souvent le cas sur les distributions LINUX). Repérez l'instance postgres de votre processus avec : 
+   ```bash
+   sudo lsof -i :5432
    ```
 
-   - Rename `sqitch.example.conf` to add squitch configuration file :
+2. Si le processus existe, saisissez son PID pour l'arrêter : 
+   ```bash
+   sudo kill <PID>
+   ```
+
+3. Nettoyer la ram et vérifier que l'image ne soit pas déjà instanciée :
+   ```bash
+   sudo docker-compose down -v
+   ```
+
+4. Lancer les services définis dans `docker-compose.yml` :
+   ```bash
+   sudo docker-compose up --build
+   ```
+       
+
+  
+## If you want to launch local DataBase with Squitch 
+
+1. Setup 
+   - Rename `sqitch.example.conf` to add squitch configuration file (don't modify) :
    ```bash
     mv sqitch.examples.conf sqitch.conf
    ```
@@ -50,9 +70,7 @@ Into the "Back" repo
 
    ```bash
    createdb orando
-
    sqitch deploy
-
    ```
 
 4. Launch the http server :
@@ -61,34 +79,8 @@ Into the "Back" repo
 npm run dev
 ```
 
-## To Start the server and DataBase usning DOCKER COMPOSE : 
-
-1 - Vérifiez qu'aucun processus de PostgreSQL ne fonctionne en arrière plan (souvent le cas sur les distributions LINUX). Repérez l'instance postgres de votre processus avec : 
-```bash
-sudo lsof -i :5432
-```
-
-2 - Si le processus existe, saisissez son PID pour l'arrêter : 
-```bash
-sudo kill <PID>
-```
-
-3. Nettoyer la ram et vérifier que l'image ne soit pas déjà instanciée :
-
-```bash
-sudo docker-compose down -v
-```
-
-4. Lancer les services définis dans `docker-compose.yml` :
-
-```bash
-sudo docker-compose up --build
-```
-
-## Documentation de l'API
-
-Ce projet utilise Swagger pour documenter l'API RESTful.
-Swagger permet de générer une documentation interactive et facilement navigable, ce qui facilite la compréhension et l'uilisation des différentes endpointss de l'API.
+## API doc
+This project uses Swagger as documentation for the REST API. It generate an interactive documentation wich can be navigable, to ease understandement of diferent endpoints from API
 
 ### Accès à la documentation Swagger
 
