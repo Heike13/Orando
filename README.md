@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/4a0b9216-0821-4c17-90ae-350482ae29ad)
+
 
 
 # Project O-Rando
