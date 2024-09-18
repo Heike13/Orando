@@ -61,22 +61,18 @@ Into the "Back" foler
   
 ## If you want to launch local DataBase with Squitch 
 
-1. Setup
-   - Rename `sqitch.example.conf` to add squitch configuration file (don't modify) :
-     
+1. Setup the squitch configuration file (don't modify) :
    ```bash
     mv sqitch.examples.conf sqitch.conf
    ```
 
 3. Initialisez la base de données dans le terminal:
-
    ```bash
    createdb orando
    sqitch deploy
    ```
 
 4. Launch the http server :
-
    ```bash
    npm run dev
    ```
