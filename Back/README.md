@@ -33,25 +33,26 @@ Into the "Back" foler
    mv .env.example .env
    ```
 
-
 ## Start the server and DataBase with DOCKER COMPOSE : 
 
-1. Vérifiez qu'aucun processus de PostgreSQL ne fonctionne en arrière plan (souvent le cas sur les distributions LINUX). Repérez l'instance postgres de votre processus avec : 
+1. Vérifiez qu'aucun processus de PostgreSQL ne fonctionne en arrière plan (souvent le cas sur les distributions LINUX). Repérez l'instance postgres de votre processus avec :
+
    ```bash
    sudo lsof -i :5432
    ```
 
-2. Si le processus existe, saisissez son PID pour l'arrêter : 
+3. Si le processus existe, saisissez son PID pour l'arrêter :
+
    ```bash
    sudo kill <PID>
    ```
 
-3. Nettoyer la ram et vérifier que l'image ne soit pas déjà instanciée :
+5. Nettoyer la ram et vérifier que l'image ne soit pas déjà instanciée :
    ```bash
    sudo docker-compose down -v
    ```
 
-4. Lancer les services définis dans `docker-compose.yml` :
+6. Lancer les services définis dans `docker-compose.yml` :
    ```bash
    sudo docker-compose up --build
    ```
@@ -60,8 +61,9 @@ Into the "Back" foler
   
 ## If you want to launch local DataBase with Squitch 
 
-1. Setup 
+1. Setup
    - Rename `sqitch.example.conf` to add squitch configuration file (don't modify) :
+     
    ```bash
     mv sqitch.examples.conf sqitch.conf
    ```
@@ -75,9 +77,9 @@ Into the "Back" foler
 
 4. Launch the http server :
 
-```bash
-npm run dev
-```
+   ```bash
+   npm run dev
+   ```
 
 ## API doc
 This project uses Swagger as documentation for the REST API. It generate an interactive documentation wich can be navigable, to ease understandement of diferent endpoints from API
