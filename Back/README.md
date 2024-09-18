@@ -1,50 +1,39 @@
 ## Back-office
+ 
+Monolithic API : MVC architecture.
+Data mappers manage persistence of data while controllers and routes organize business logic and HTTP request management. 
+The application is structured to increase maintainability and scale, all this allows a clear separation of concerns.
 
-Construction : 
-Ce projet utilise une combinaison de Data Mapper pour séparer la gestion des données, de leur persistance, dans une architecture MVC (models, views, controllers). 
-Les Data Mappers gèrent la persistance des données tandis que les Contrôleurs et les Routes organisent la logique métier et la gestion des requêtes HTTP. 
-L'application est structurée pour accroitre la maintenabilité et la mise à l'échelle (scale), tout cela permet une séparation claire des préoccupations.
+## Features
 
-## Fonctionnalités
+- Authentication and user management.
+- Consultation of information related to the available routes.
 
-- Consultation des itinéraires disponible.
-- Authentification et gestion des utilisateurs.
-
-### Pré-requis pour ce projet 
+### What is needed ?
 
 - [Node.js](https://nodejs.org/)
-- [PostgreSQL](https://www.postgresql.org/)
 - [npm](https://www.npmjs.com/)
+- [PostgreSQL](https://www.postgresql.org/)
 - [Postgis](https://postgis.net/)
 - [Sqitch](https://sqitch.org/)
 - [Docker](https://www.docker.com/)
 
-### Installation
+### Install
+Into the "Back" repo
 
-1. Clonez le dépôt Git:
-
-   ```bash
-   git clone https://github.com/O-clock-Onigiri/projet-8-o-rando-back.git
-   cd projet-8-o-rando-back
-   ```
-
-2. Installez les dépendances Node.js:
+1. Install Node.js dependencies (use NPM) :
 
    ```bash
    npm install
    ```
 
-3. Configurez les variables d'environnement:
-
-   - Créez un fichier `.env` à la racine du projet et ajoutez les informations de connexion à votre base de données PostgreSQL:
+2. Set up the .env variables (don't modify) : 
 
    ```bash
    mv .env.example .env
    ```
 
    ```plaintext
-
-
    DB_USER=votre_utilisateur
    DB_HOST=localhost
    DB_NAME=nom_de_votre_base
@@ -52,13 +41,12 @@ L'application est structurée pour accroitre la maintenabilité et la mise à l'
    DB_PORT=5432
    ```
 
-   - Créez un fichier `sqitch.conf` à la racine du projet et ajoutez la configuration de sqtich:
-
+   - Rename `sqitch.example.conf` to add squitch configuration file :
    ```bash
     mv sqitch.examples.conf sqitch.conf
    ```
 
-4. Initialisez la base de données dans le terminal:
+3. Initialisez la base de données dans le terminal:
 
    ```bash
    createdb orando
@@ -67,15 +55,13 @@ L'application est structurée pour accroitre la maintenabilité et la mise à l'
 
    ```
 
-## Démarrage
-
-Pour démarrer le serveur http:
+4. Launch the http server :
 
 ```bash
 npm run dev
 ```
 
-## Pour démarrer le serveur et la BDD avec Docker COMPOSE : 
+## To Start the server and DataBase usning DOCKER COMPOSE : 
 
 1 - Vérifiez qu'aucun processus de PostgreSQL ne fonctionne en arrière plan (souvent le cas sur les distributions LINUX). Repérez l'instance postgres de votre processus avec : 
 ```bash
