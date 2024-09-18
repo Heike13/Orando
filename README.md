@@ -3,8 +3,8 @@
 # Project O-Rando
 
 O'rando is a website that offers the discovery of hiking routes in France. 
-The frontend part of this project uses React in SPA design pattern, and consumes our back API.
-The backend part of this project uses Node.js for the server and PostgreSQL as a database. The back expose a RESTful API to manage CRUD (Create, Read, Update, Delete) operations on the data of hikes.
+The frontend part of this project uses SPA design pattern with REACT librairie.
+The backend part uses Monolithic REST-API architecture with Node.js framework for the server, and PostgreSQL as a database. 
 
 ## Installation 
 
