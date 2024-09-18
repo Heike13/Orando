@@ -1,0 +1,33 @@
+.form__login {
+  padding: 1rem;
+
+  input {
+    width: 100% ;
+    padding: 8px ;
+    border-radius: 4px ;
+    border: 1px solid #ccc ;
+    background-color: #e9ecef ;
+
+  }
+
+
+
+  .form-account__favorites {
+
+    padding: 10px;
+    background-color: #a2d5cf;
+    border: none ;
+    color: black;
+    border-radius: 4px ;
+    display: block;
+    cursor: pointer ;
+    margin: 20px auto;
+    width: 100%;
+    text-align: center;
+    transition: background-color 0.3s ease ;
+
+    &:hover {
+      background-color: #73bfb8;
+    }
+  }
+}

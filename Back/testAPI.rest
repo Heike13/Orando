@@ -1,0 +1,15 @@
+# GET http://localhost:4000/bookmarks/
+# Content-Type: application/json
+# Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQsImVtYWlsIjoibWF0dGhpYXMuaGlib25Ac2ZyLmZyIiwiaXAiOiI6OmZmZmY6MTcyLjE4LjAuMSIsInVzZXJBZ2VudCI6Ik1vemlsbGEvNS4wIChYMTE7IFVidW50dTsgTGludXggeDg2XzY0OyBydjoxMjkuMCkgR2Vja28vMjAxMDAxMDEgRmlyZWZveC8xMjkuMCIsImlhdCI6MTcyNDg0NjU2NCwiZXhwIjoxNzI0ODUwMTY0fQ.40EB8k8Ieugi1vtwNn6SkLVbITM2Epgopd_RNZxUfAs
+
+# {
+#   "hikeId": 3
+# }
+
+# POST http://localhost:4000/bookmarks/
+# Content-Type: application/json
+# Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQsImVtYWlsIjoibWF0dGhpYXMuaGlib25Ac2ZyLmZyIiwiaXAiOiI6OmZmZmY6MTcyLjE4LjAuMSIsInVzZXJBZ2VudCI6Ik1vemlsbGEvNS4wIChYMTE7IFVidW50dTsgTGludXggeDg2XzY0OyBydjoxMjkuMCkgR2Vja28vMjAxMDAxMDEgRmlyZWZveC8xMjkuMCIsImlhdCI6MTcyNDg0NjU2NCwiZXhwIjoxNzI0ODUwMTY0fQ.40EB8k8Ieugi1vtwNn6SkLVbITM2Epgopd_RNZxUfAs
+
+# {
+#   "hikeId": 3
+# }

@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /mon-compte/
+Allow: /
+
+# Sitemap
+Sitemap: https://www.o-rando.com/sitemap.xml

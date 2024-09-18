@@ -1,0 +1,141 @@
+.hike {
+  h1 {
+    text-align: center;
+  }
+  &__header {
+    padding: 1rem;
+  }
+  &__subtitle {
+    margin-top: 1.5rem;
+  }
+  &__pictures {
+    width: 100%;
+    position: relative;
+
+    .slide-image {
+      width: auto;
+      height: auto;
+      object-fit: cover;
+      margin: 0 auto;
+      transition: transform 0.3s ease;
+    }
+
+    .slick-prev,
+    .slick-next {
+      color: #000;
+      z-index: 1;
+    }
+
+    .slick-prev::before,
+    .slick-next::before {
+      color: #000;
+      font-size: 24px;
+    }
+  }
+
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 1rem;
+    margin-top: 1rem;
+    justify-content: center;
+
+    &-localisation,
+    &-difficulty,
+    &-time,
+    &-distance {
+      border: 1.5px solid;
+      padding: 0.5rem;
+      border-radius: 5px;
+      box-shadow: 1px 1px 3px #000000;
+      font-size: 0.875rem;
+    }
+
+    &-localisation {
+      background-color: #e0f7fa;
+    }
+    &-difficulty {
+      background-color: #ffccbc;
+    }
+    &-time {
+      background-color: #ffe0b2;
+    }
+    &-distance {
+      background-color: #dcedc8;
+    }
+  }
+
+  &__details {
+    gap: 1rem;
+    padding: 1rem;
+    p {
+      margin: 0.5rem 0;
+    }
+  }
+
+  &__map {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  @media (max-width: 700px) {
+    h1 {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+    h2 {
+      font-size: 1.25rem;
+    }
+    &__tags {
+      flex-direction: row;
+      align-items: center;
+
+      &-localisation {
+        padding: 0.2rem;
+        font-size: 0.6rem;
+      }
+      &-difficulty {
+        padding: 0.2rem;
+        font-size: 0.6rem;
+      }
+      &-time {
+        padding: 0.2rem;
+        font-size: 0.6rem;
+      }
+      &-distance {
+        padding: 0.2rem;
+        font-size: 0.6rem;
+      }
+    }
+    &__pictures {
+      .slide-image {
+        width: 100%;
+        max-height: 15rem;
+      }
+      .slick-prev,
+      .slick-next {
+        top: 50%;
+        width: 10px;
+        height: 30px;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 50%;
+      }
+      .slick-prev::before,
+      .slick-next::before {
+        color: #000;
+        font-size: 18px;
+      }
+    }
+    &__details {
+      padding: 0.5rem;
+    }
+    &__map {
+      padding: 0.1rem;
+      &-wrapper {
+        margin: 1rem 0;
+      }
+    }
+  }
+}

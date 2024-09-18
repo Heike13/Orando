@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "nickname": "JohnDoe",
+    "localisation": "Paris, France",
+    "email": "johndoe@example.com",
+    "password": "password123"
+  },
+  {
+    "id": 2,
+    "nickname": "JaneSmith",
+    "localisation": "Lyon, France",
+    "email": "janesmith@example.com",
+    "password": "password456"
+  },
+  {
+    "id": 3,
+    "nickname": "BobMartin",
+    "localisation": "Marseille, France",
+    "email": "bobmartin@example.com",
+    "password": "password789"
+  },
+  {
+    "id": 4,
+    "nickname": "AliceJones",
+    "localisation": "Bordeaux, France",
+    "email": "alicejones@example.com",
+    "password": "password101"
+  },
+  {
+    "id": 5,
+    "nickname": "CharlieBrown",
+    "localisation": "Toulouse, France",
+    "email": "charliebrown@example.com",
+    "password": "password202"
+  }
+]

@@ -1,0 +1,38 @@
+.form__login {
+  .form__login__field {
+    margin-bottom: 20px;
+
+    input,
+    select {
+      width: 100%;
+      padding: 8px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      background-color: #e9ecef;
+    }
+  }
+  .form-account__favorites {
+    background-color: #a2d5cf;
+    color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+    width: 100%;
+    text-align: center;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #73bfb8;
+    }
+  }
+
+  .form-account__forgot-password {
+    display: block;
+    text-align: center;
+    margin: 2rem 0;
+    // text-decoration: none;
+  }
+}

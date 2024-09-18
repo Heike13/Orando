@@ -1,0 +1,22 @@
+.scroll-to-top-button {
+  border: none;
+  border-radius: 15%;
+  width: 4rem;
+  height: 4rem;
+  background-color: #73bfb7;
+  box-shadow: 2px 2px 4px #000000;
+  color: black;
+  text-decoration: none;
+  position: fixed;
+  bottom: 3%;
+  right: 13%;
+  cursor: pointer;
+  z-index: 5000;
+}
+
+.no-show-button {
+  animation: inverted-tracking-in-expand-forward-bottom 0.4s linear both;
+}
+.show-button {
+  animation: tracking-in-expand-forward-bottom 0.4s linear both;
+}

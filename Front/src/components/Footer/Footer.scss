@@ -1,0 +1,29 @@
+@use '../../styles/variables' as v;
+
+.footer {
+  // background: radial-gradient(rgb(244, 166, 127) 0%, #d97b29cb 100%);
+  margin: auto;
+  text-align: center;
+  border-top: solid 1px #00000042;
+  padding-top: 1.5rem;
+
+  &__nav {
+    width: 60%;
+    margin: auto;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__nav-links {
+    color: black;
+    text-decoration: none;
+    padding: 0.5rem;
+  }
+
+  &__copyright {
+    align-items: center;
+  }
+}

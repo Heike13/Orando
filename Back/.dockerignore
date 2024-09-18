@@ -1,0 +1,40 @@
+# Ignore node_modules
+node_modules
+
+# Ignore logs
+logs
+*.log
+npm-debug.log*
+
+# Ignore les fichiers d'environnement
+.env
+
+# Ignore les fichiers temporaires et les sauvegardes de l'éditeur
+*.swp
+*~
+.tmp
+
+# Ignore les dossiers spécifiques à l'IDE/éditeur
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore les dossiers de test et les rapports de test
+coverage/
+test/
+
+# Ignore les fichiers de configuration spécifique à votre environnement local
+docker-compose.override.yml
+
+# Ignore les images de build locale
+*.tar
+
+# Ignore les répertoires et fichiers sensibles
+secrets/
+.env.local
+.env.*.local
+
+# Ignore les fichiers spécifiques à OS
+.DS_Store
+Thumbs.db

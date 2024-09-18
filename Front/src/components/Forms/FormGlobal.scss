@@ -1,0 +1,88 @@
+@use '../../styles/variables' as v;
+
+.form-global {
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 70%;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  label {
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 0.2rem;
+  }
+
+  span {
+    display: inline-block;
+    width: 100%;
+    padding: 8px;
+    background-color: white;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input,
+  select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 2px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: #e9ecef;
+  }
+}
+
+.button {
+  color: black;
+  cursor: pointer;
+
+  max-width: 30%;
+  height: 3rem;
+
+  padding: 10px;
+  margin: 20px auto;
+
+  border: none;
+  border-radius: 4px;
+
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+
+  &-lightBlue {
+    background-color: v.$color-secondary;
+    &:hover {
+      background-color: v.$color-secondary-hover;
+    }
+  }
+
+  &-red {
+    background-color: v.$color-error;
+    &:hover {
+      background-color: v.$color-error-hover;
+    }
+  }
+
+  &-orange {
+    background-color: v.$color-primary;
+    &:hover {
+      background-color: v.$color-primary-hover;
+    }
+  }
+
+  &-green {
+    background-color: v.$color-success;
+    &:hover {
+      background-color: v.$color-success-hover;
+    }
+  }
+
+  // ajout de rien
+}

@@ -1,0 +1,52 @@
+/* swagger-custom.css */
+.swagger-ui .topbar {
+    background-color: #73BFB8;
+
+    justify-content: space-between;
+    padding: 0 10px;
+  }
+ 
+  .swagger-ui .topbar .link {
+    flex: 1; 
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+  }
+ 
+  .swagger-ui .topbar a::before {
+    content: none; 
+  }
+  .swagger-ui .topbar a::after {
+    content: url('/logo.jpg');
+    margin-left: auto;
+  max-width: 4cm;
+  max-height: 4cm;
+  }
+  .swagger-ui .scheme-container {
+    background-color: #F2F2F2;
+  }
+  .swagger-ui .info {
+
+    color: #0D0D0D;
+  }
+  .swagger-ui .info .title {
+    color: #D97B29;
+  }
+  .swagger-ui .info .description {
+    color: #0D0D0D;
+  }
+  .swagger-ui .info .version {
+    color: #0D0D0D;
+  }
+  .swagger-ui .opblock.opblock-get .opblock-summary-method {
+    background: #73BFB8;
+  }
+  .swagger-ui .opblock.opblock-post .opblock-summary-method {
+    background: #D97B29;
+  }
+  .swagger-ui .opblock.opblock-put .opblock-summary-method {
+    background: #D97B29;
+  }
+  .swagger-ui .opblock.opblock-delete .opblock-summary-method {
+    background: #0D0D0D;
+  }

@@ -1,0 +1,24 @@
+@use '../../styles/variables' as v;
+
+.bookmarks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  &__filters {
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: v.$gutter;
+  }
+
+  &__list {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: v.$gutter;
+    justify-content: center;
+    padding: v.$gutter 0;
+  }
+}

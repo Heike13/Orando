@@ -1,0 +1,8 @@
+%syntax-version=1.0.0
+%project=orando
+
+00-pluginPostgis 2024-06-26T13:23:23Z Sebdev43 <sebastien.robert@oclock.school> # Ajout à notre BDD l'extension Postgis qui permet de stocker du geojson
+01-insertTables 2024-06-26T13:35:06Z Sebdev43 <sebastien.robert@oclock.school> # ajout des tables users hikes users_has_Hikes
+02-sendSeeding 2024-06-28T08:20:55Z Kevin <kevin.cannizzaro@oclock.school> # add seeding in DataBase
+
+

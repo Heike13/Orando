@@ -1,0 +1,126 @@
+@use 'reset';
+@use 'fonts';
+@use 'keyframes';
+@use 'variables' as v;
+
+#root {
+  width: 80%;
+  margin: auto;
+  background-color: v.$color-background;
+  font-size: v.$font-size;
+
+  body.not-found-page & {
+    background-color: transparent;
+  }
+}
+body {
+  margin: 0;
+  font-family: 'Miller Display Regular', sans-serif;
+  font-size: v.$font-size;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url('/home.webp');
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6, a {
+  font-family: 'Oversouth Regular DEMO', sans-serif;
+  font-weight: 400;
+  margin: 0;
+}
+
+.container__background {
+  width: 90%;
+  padding: 0rem (v.$gutter * 2);
+  margin: auto;
+}
+.content {
+  min-height: 110vh;
+  margin: (v.$gutter * 2) 0;
+  margin-bottom: (v.$gutter * 10);
+}
+
+.page_title {
+  margin: v.$gutter 0;
+  font-size: v.$gutter * 1.1;
+}
+
+
+// Scroll to top button ----------------------------------------------
+.scroll-to-top-button {
+  border: none;
+  border-radius: 15%;
+  width: (v.$gutter * 4);
+  height: (v.$gutter * 3.2);
+  background-color: #73bfb7;
+  box-shadow: 2px 2px 4px #000000;
+  color: black;
+  text-decoration: none;
+  position: fixed;
+  bottom: 3%;
+  right: 11%;
+  cursor: pointer;
+  z-index: 5000;
+}
+
+.no-show-button {
+  animation: inverted-tracking-in-expand-forward-bottom 0.4s linear both;
+}
+.show-button {
+  animation: tracking-in-expand-forward-bottom 0.4s linear both;
+}
+
+// END scroll to top button ----------------------------------------------
+
+
+
+// RESPONSIVE ------------------------------------------------------------
+@media screen and (max-width: 930px) {
+  body {
+    background-image: none;
+  }
+  #root {
+    width: 100%;
+  }
+  .scroll-to-top-button {
+    right: 1.5%;
+    width: (v.$gutter * 3.2);
+    height: (v.$gutter * 2.5);
+  }
+  .page_title {
+    font-size: v.$gutter * 1.2;
+    text-align: center;
+  }
+  .header {
+    display: flex;
+  }
+  .breadcrumbs {
+    display: none;
+  }
+  .container__background {
+    padding: 0;
+  }
+  .hike {
+    margin: 20px;
+
+    &__header {
+      margin-bottom: v.$gutter;
+    }
+
+    &__tags {
+      margin-top: calc(v.$gutter / 2);
+    }
+    
+    &__details,
+    &__map,
+    &__footer {
+      margin-top: v.$gutter;
+    }
+  }
+}

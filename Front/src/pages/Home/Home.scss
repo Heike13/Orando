@@ -1,0 +1,38 @@
+.home {
+  margin: 1.5rem;
+
+  &__banner {
+    background-image: url('/home2.webp');
+    height: 450px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    @media (max-width: 768px) {
+      height: 300px;
+    }
+  }
+
+  &__title-cards {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &__text-presentation {
+    text-align: justify;
+  }
+}
+
+.cards__content {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+.lien_wiki {
+  text-decoration: none;
+  color: black;
+}

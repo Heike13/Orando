@@ -1,0 +1,23 @@
+@use '../../styles/variables' as v;
+
+.card {
+  &__title {
+    font-size: 1.5rem;
+    text-align: center;
+    min-height: 4rem;
+  }
+  &__description {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: center;
+  }
+
+  &:hover {
+    box-shadow:
+      12px 12px 12px rgba(0, 0, 0, 0.1),
+      -10px -10px 10px white;
+  }
+  &:active {
+    animation: scale-down-center 0.2s;
+  }
+}
