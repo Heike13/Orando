@@ -8,5 +8,6 @@ The backend part of this project uses Node.js for the server and PostgreSQL as a
 
 ## Installation 
 
-Follow the procedures of the MD file in the back folder, 
-then follow the MD procedure in front folder to launch your local instance of the project
+1. Clone this repo
+2. Back folder : Follow the procedures of the MD file to launch the server and the DataBase by using DOCKER COMPOSE
+3. Front floder : Follow the MD procedure to launch your local front interface
