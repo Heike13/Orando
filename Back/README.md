@@ -63,6 +63,7 @@ Setup the squitch configuration file
     mv sqitch.examples.conf sqitch.conf
    ```
 
+Remember : create a database and update squitch.conf document
 
 ## API doc
 This project uses Swagger as documentation for the REST API. It generate an interactive documentation wich can be navigable, to ease understandement of diferent endpoints from API
