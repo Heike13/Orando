@@ -13,6 +13,7 @@ services:
       - PGPASSWORD=postgres
       - PGDATABASE=orando
       - JWT_SECRET=un randonneur aimant la randonnée part sur les sentiers en quête de nature et de belle rencontre
+      - JWT_REFRESH_SECRET=un refresh token cest quand même drolemement pratique pour renouveler un jwt
       - EMAIL=noreply.orando@gmail.com
       - EMAIL_PASSWORD=vjvz zvth kjdu axfg
     volumes:
@@ -29,7 +30,7 @@ services:
       - POSTGRES_PASSWORD=postgres
     volumes:
       - pgdata:/var/lib/postgresql/data
-      - ./data:/docker-entrypoint-initdb.d  
+      - ./data:/docker-entrypoint-initdb.d
 
 volumes:
   pgdata:

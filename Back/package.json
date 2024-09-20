@@ -1,7 +1,7 @@
 {
     "name": "projet-o-rando-back",
     "version": "1.0.0",
-    "description": "Api rest qui permet de gérer des utlisateur et des parcours de randonnée",
+    "description": "Api REST qui permet de gérer des utlisateurs et des parcours de randonnée",
     "type": "module",
     "main": "server.js",
     "directories": {
@@ -12,7 +12,12 @@
         "start": "NODE_ENV=production node .",
         "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest",
         "test:watch": "jest --watch",
-        "test:coverage": "jest --coverage"
+        "test:coverage": "jest --coverage", 
+        "sqitch:init": "sqitch init my_project --engine pg",
+        "sqitch:add": "sqitch add",
+        "sqitch:deploy": "sqitch deploy",
+        "sqitch:revert": "sqitch revert",
+        "sqitch:verify": "sqitch verify"
     },
     "keywords": [],
     "author": "",
