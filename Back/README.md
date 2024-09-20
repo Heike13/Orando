@@ -58,21 +58,12 @@ Into the "Back" foler
        
 ## If you want to launch local DataBase with Squitch 
 
-1. Setup the squitch configuration file (don't modify) :
+Setup the squitch configuration file 
    ```bash
     mv sqitch.examples.conf sqitch.conf
    ```
 
-3. Initialisez la base de données dans le terminal:
-   ```bash
-   createdb orando
-   sqitch deploy
-   ```
-
-4. Launch the http server :
-   ```bash
-   npm run dev
-   ```
+Remember : create a database and update squitch.conf document
 
 ## API doc
 This project uses Swagger as documentation for the REST API. It generate an interactive documentation wich can be navigable, to ease understandement of diferent endpoints from API
