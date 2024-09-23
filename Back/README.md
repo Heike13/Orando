@@ -10,6 +10,7 @@ The application is structured to increase maintainability and scale, all this al
 - Consultation of information related to the available routes (using GEOjson technologie with postGis extension)
 - API doc with Swagger
 - Versionning DB with Sqitch
+- DB saves
 - OWASP protection
 - Proxy server using Nginx
 - Controlled environment with DOCKER
