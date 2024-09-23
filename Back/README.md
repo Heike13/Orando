@@ -6,8 +6,14 @@ The application is structured to increase maintainability and scale, all this al
 
 ## Features
 
-- Authentication and user management.
-- Consultation of information related to the available routes.
+- Double Authentication (email) and user management.
+- Consultation of information related to the available routes (using GEOjson technologie with postGis extension)
+- API doc with Swagger
+- Versionning DB with Sqitch
+- OWASP protection
+- Proxy server using Nginx
+- Controlled environment with DOCKER
+- Containers mapping with DOCKER COMPOSE 
 
 ## What is needed ?
 
