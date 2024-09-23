@@ -13,7 +13,8 @@ The application is structured to increase maintainability and scale, all this al
 - OWASP protection
 - Proxy server using Nginx
 - Controlled environment with DOCKER
-- Containers mapping with DOCKER COMPOSE 
+- Containers mapping with DOCKER COMPOSE
+- Unitary tests & automatic
 
 ## What is needed ?
 
