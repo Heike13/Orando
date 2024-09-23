@@ -10,4 +10,4 @@ The backend part uses Monolithic REST-API architecture with Node.js framework fo
 
 1. Clone this repo
 2. Back folder : Follow the procedures of the MD file to launch the server and the DataBase by using DOCKER COMPOSE
-3. Front floder : Follow the MD procedure to launch your local front interface
+3. Front folder : Follow the MD procedure to launch your local front interface
